@@ -1,0 +1,128 @@
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #000;
+}
+
+/* Estilos para el encabezado del sitio */
+h1 {
+    color: #003366;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* Sección del carrusel de imágenes */
+.carousel {
+    position: relative;
+    width: 70%; /* Ajusta el ancho del carrusel */
+    height: 300px;
+    overflow: clip;
+    margin: 20px auto; /* Centra el carrusel horizontalmente */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Sección del contenido */
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Sección de contacto en el pie de página */
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .menu-icon ul li a {
+        font-size: 1em;
+    }
+}
+
+/* Estilos para el estado del servicio */
+.estado {
+    margin-top: 10px;
+    font-weight: bold;
+}
+#estado-input {
+    font-size: 1em; /* Aumenta el tamaño del texto del input */
+    padding: 10px;
+    width: 100%; /* Ajusta el ancho del input para que se adapte al contenedor */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+    margin-top: 10px;
+}
+
+.sin-revisar {
+    color: red;
+}
+
+.en-proceso {
+    color: #00bcd4;
+}
+
+.terminado {
+    color: green;
+}
+
+header {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px 0; /* Espaciado alrededor de la imagen */
+    text-align: center; /* Centra la imagen */
+}
+
+/* Añadir el estilo para el logo en lugar de h1 */
+#logo {
+    max-width: 70%; /* La imagen se adapta al ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
